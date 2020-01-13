@@ -1,0 +1,30 @@
+@import "../../assets/stylesheets/variable.scss";
+
+.tabs {
+  display: flex;
+  list-style: none;
+  border-bottom: 1px solid $light-gray;
+  li {
+    padding: $space-md * 2 $space-md - 2;
+    margin-right: $space-md;
+    font-size: $font-size-sm;
+    font-weight: 500;
+    span {
+      padding: 0 $space-sm;
+      background: $light-gray;
+      border-radius: 18px;
+      margin-left: $space-sm;
+    }
+    &.active {
+      font-weight: 600;
+      border-bottom: 2px solid $dark-red;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .tabs {
+    width: 100%;
+    overflow-y: scroll;
+  }
+}

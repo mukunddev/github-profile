@@ -1,0 +1,68 @@
+@import "../../assets/stylesheets/variable.scss";
+
+.userContainer {
+  padding-right: 30px;
+  .imgBox {
+    img {
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+  .statusBox {
+    padding: 10px;
+    color: #586069;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  ul {
+    list-style: none;
+    font-size: $font-size-sm;
+    font-weight: 400;
+    li {
+      margin: $space-sm $space-no;
+      a {
+        color: $link-color;
+        text-decoration: none;
+      }
+    }
+  }
+  h1 {
+    color: $primary-color;
+    font-size: $font-size-xs + $font-size-sm;
+    margin-top: $space-lg;
+    margin-bottom: $space-no;
+  }
+  h3 {
+    margin: $space-no;
+    $font-size-lg: 20px;
+    color: $secondary-color;
+    font-weight: 400;
+    margin-bottom: 2.5 * $space-md;
+  }
+  .bio {
+    font-size: 14px;
+    color: $primary-color;
+  }
+  .btnContainer {
+    padding-bottom: $space-md * 2;
+    border-bottom: 1px solid $light-gray;
+    margin-bottom: $space-md * 2;
+    button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: $space-md;
+      font-size: $font-size-md;
+      font-weight: 600;
+      color: $primary-color;
+      border: 1px solid $light-gray;
+      background: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .userContainer {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../assets/stylesheets/variable.scss";
+
+.filterContainer {
+  display: flex;
+  padding: $space-lg 0;
+  border-bottom: 1px solid $light-gray;
+  input {
+    flex: auto;
+    padding: $space-md - 2;
+    font-size: $font-size-md;
+    border: 1px solid $light-gray;
+    border-radius: 3px;
+    outline: none;
+  }
+  select {
+    width: 100px;
+    height: 36px;
+    margin-left: $space-lg;
+    border: 1px solid $white;
+  }
+}
+@media screen and (max-width: 500px) {
+  .filterContainer {
+    display: flex;
+    flex-direction: column;
+
+    select {
+      margin: 10px 0px;
+      width: 100%;
+    }
+  }
+}

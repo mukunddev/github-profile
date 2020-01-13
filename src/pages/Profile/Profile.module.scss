@@ -1,0 +1,25 @@
+@import "../../assets/stylesheets/variable.scss";
+
+.profileContainer {
+  width: 100%;
+  display: flex;
+  margin: $space-md * 2 0 0 0;
+  .profileLeft {
+    width: 25%;
+  }
+  .profileRight {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .profileContainer {
+    flex-direction: column;
+    .profileLeft {
+      width: 100%;
+    }
+    .profileRight {
+      width: 100%;
+    }
+  }
+}

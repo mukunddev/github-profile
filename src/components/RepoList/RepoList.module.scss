@@ -1,0 +1,67 @@
+@import "../../assets//stylesheets/variable.scss";
+
+.repoInfo {
+  border-bottom: 1px solid $light-gray;
+  list-style: none;
+  .repo {
+    padding: 2.5 * $space-md 0;
+    border-bottom: 1px solid $light-gray;
+  }
+  .repoName {
+    h3 {
+      margin: $space-no;
+      a {
+        text-decoration: none;
+        color: $link-color;
+      }
+    }
+    p {
+      color: $secondary-color;
+      margin: $space-md - 2 $space-no;
+      font-size: $font-size-xs;
+      font-weight: 500;
+      a {
+        color: $secondary-color;
+        text-decoration: none;
+        &:hover {
+          color: $link-color;
+        }
+      }
+    }
+  }
+  p {
+    color: $secondary-color;
+    font-size: $font-size-sm;
+    margin: $space-lg 0;
+    font-weight: 500;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    font-size: $font-size-sm;
+    color: $primary-color;
+    flex-wrap: wrap;
+    li {
+      margin: $space-no $space-lg $space-no $space-no;
+      padding: $space-no;
+      display: flex;
+      img {
+        width: 16px;
+        margin-right: $space-sm;
+      }
+    }
+  }
+  .langColor {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: $space-sm;
+  }
+  .mit {
+    width: 16px;
+  }
+  .fork {
+    width: 12px;
+  }
+}

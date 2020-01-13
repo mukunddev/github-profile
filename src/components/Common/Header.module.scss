@@ -1,0 +1,38 @@
+@import "../../assets//stylesheets/variable.scss";
+
+.headerMainContainer {
+  font-size: $font-size-sm;
+  background-color: $primary-color;
+  font-weight: 600;
+  color: $white;
+  .headerContainer {
+    display: flex;
+    padding: $space-md + 6;
+    .logoContainer {
+      img {
+        width: 32px;
+      }
+    }
+    .headerLeft {
+      display: flex;
+      flex: auto;
+      list-style: none;
+      align-items: center;
+      margin-left: $space-lg;
+      li {
+        margin-right: $space-lg;
+      }
+    }
+    .headerRight {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      .notification {
+        width: 22px;
+      }
+    }
+    .headerItem {
+      margin-right: $space-lg;
+    }
+  }
+}

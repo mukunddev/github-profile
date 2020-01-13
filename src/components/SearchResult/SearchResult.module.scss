@@ -1,0 +1,12 @@
+@import "../../assets/stylesheets/variable.scss";
+
+.resultContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: $space-lg $space-no;
+  border-bottom: 1px solid $light-gray;
+  list-style: none;
+  .clear {
+    cursor: pointer;
+  }
+}
